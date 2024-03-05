@@ -1,0 +1,19 @@
+@startuml
+
+class Professeur
+
+class Discipline
+
+class Etudiant
+
+note "Cours" as cours
+
+<> Cours
+Cours .. cours
+' l'association ternaire devrait s'appeler Cours
+
+Cours -- "1" Professeur : < Enseigne
+Discipline "*"-- Cours : A une expertise >
+Etudiant "5..30" -- Cours : Suit >
+
+@enduml
