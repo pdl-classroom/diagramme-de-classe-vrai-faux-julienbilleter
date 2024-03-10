@@ -9,7 +9,7 @@ Etant donné le diagramme de domaine ci-dessus, les assertions suivantes sont-el
 - Un étudiant peut participer à autant de cours qu’il veut : VRAI car la cardinalité est `*` du côté `Cours` de l'association `Cours`-`Etudiant`
 - Plusieurs professeurs peuvent enseigner la même discipline : FAUX car la cardinalité est de `1` du côté `Professeur` de l'association `Professeur`-`Discipline`
 - Un professeur peut enseigner plusieurs disciplines : VRAI car la cardinalité est `*` du côté `Discipline` de l'association `Professeur`-`Discipline`
-- Un cours peut être enseigné à 2 étudiants : FAUX car la cardinalité du côté `Etudiant` est `5..30` (minimum 5, maximum 30, 2 <= 5) de l'association `Etudiant`-`Cours`
+- Un cours peut être enseigné à 2 étudiants : FAUX car la cardinalité du côté `Etudiant` est `5..30` (minimum 5, maximum 30, 2 < 5) de l'association `Etudiant`-`Cours`
 - Un cours peut être enseigné à 20 étudiants : VRAI car la cardinalité du côté `Etudiant` est `5..30` (minimum 5, maximum 30, 5 <= 20 <= 30) de l'association `Etudiant`-`Cours`
 
 ## Question ouverte
